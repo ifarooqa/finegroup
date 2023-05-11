@@ -1,0 +1,12 @@
+@media  screen and (max-width:1180px) {
+    .hcol.one, .hcol.five {
+        display: none;
+    }
+    .hcol.two {
+        flex-basis: 42%;
+    }
+    .hcol.four {
+        flex-basis: 34%;
+    }    
+}
+

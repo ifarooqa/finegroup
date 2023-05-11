@@ -1,0 +1,411 @@
+@font-face {
+  font-family: customFont;
+  src: url("/fonts/Allrounder/AllrounderMonumentTest-Book.otf")
+    format("truetype");
+  src: url("/fonts/Allrounder/AllrounderMonumentTest-Regular.otf")
+    format("truetype");
+  src: url("/fonts/Allrounder/AllrounderMonumentTest-Medium.otf")
+    format("truetype");
+  src: url("/fonts/Aurel/Aurel\ regular.otf") format("truetype");
+  src: url("/fonts/Aurel/Aurel\ light.otf") format("truetype");
+  src: url("/fonts/Aurel/Aurel\ bold.otf") format("truetype");
+}
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "customFont";
+  transition: background-color .5s;
+}
+div {
+  font-family: "customFont";
+}
+
+/*********  Header Styling Starts ******* */
+.full-container {
+  max-width: 1800px;
+  background-color: #cdc19c00;
+  margin: 0 auto;
+}
+.header-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  padding: 0 20px;
+  margin: 0 auto -135px;
+  position: relative;
+  z-index: 1;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navlinks a {
+  font-family: "Aurel";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none !important;
+  transition: 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+.navlinks a:hover {
+  color: #fff3d9;
+  border-bottom: 2px solid;
+
+  padding: 0 0 22px 0;
+}
+.hcol.three {
+  text-align: center;
+  padding: 0 25px 0 0;
+}
+.hcol.three img {
+  width: 70%;
+}
+.hcol.two {
+  flex-basis: 35%;
+}
+.hcol.four {
+  flex-basis: 25%;
+}
+.hcol.five {
+  flex-basis: 12%;
+  color: #fff;
+}
+.head-phn-num {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+.head-phn-num:hover,
+.head-phn-num:hover svg {
+  fill: #fff3d9;
+  color: #fff3d9;
+}
+.hcol.one:hover svg {
+  cursor: pointer;
+  fill: #ffd579;
+}
+/*********  Header Styling Ends ******* */
+
+/*********  Home Top Baneer Styling Starts ******* */
+.banner-inner-content {
+  position: relative;
+}
+.banner-inner-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.text-in-banner {
+  position: absolute;
+  top: 45%;
+  /* transform: translate(18%, 50%); */
+  color: #fff;
+}
+.heading-four {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+}
+.para-in-banner {
+  font-family: "Aurel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  max-width: 75%;
+  margin: 12px auto;
+  text-align: center;
+}
+.owl-item.active .text-in-banner {
+  animation: fadeInUp ease 2.6s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owl-dots {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.owl-one.owl-carousel.owl-loaded.owl-drag {
+  position: relative;
+}
+/********  Home Top Baneer Styling Starts ******* */
+
+/********  Home Main Content Starts (About Section) ******* */
+.abt-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* height: 120vh; */
+  padding: 50px 20px;
+  background-image: url(/media/images/pattern-bg.jpg);
+}
+.abt-sec-heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #252525;
+}
+.abt-sec-text {
+  width: 75%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #494949;
+}
+.abt-sec-imgs img {
+  width: 30%;
+}
+.abt-sec-imgs {
+  margin: 50px 0 0 0;
+}
+.abt-sec-imgs div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+span.atb-sec-btn {
+  margin: 50px 0 0 0;
+}
+span.atb-sec-btn a {
+  border: 2px solid #585858;
+  border-radius: 4px;
+  padding: 10px 15px;
+  color: #585858;
+  text-decoration: none;
+}
+span.atb-sec-btn a:hover {
+  background-color: #79582c;
+  color: #fff;
+  border: none;
+}
+/********  Home Main Content Starts (About Section) ******* */
+
+/********  Home Our Plant Slider Starts ******* */
+.our-plant-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 650px;
+  height: 500px;
+  padding: 0 0 0 100px;
+}
+.slider-img img {
+  width: 62%;
+}
+.slider-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px 0;
+}
+.flour-name,
+.history {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between !important;
+  width: 360px;
+}
+.flour-name {
+  font-size: 18px;
+}
+.history {
+  border: 1px solid;
+  border-right: none;
+  border-left: none;
+  padding: 15px;
+}
+.content-top-div {
+  display: flex;
+  align-items: flex-start !important;
+}
+
+/* .desc {
+    width: 100%;
+} */
+.owl-two.owl-carousel {
+  background-image: url(/media/images/home-our-plant-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-heading {
+  font-family: "Allrounder Monument";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 61px;
+  text-transform: uppercase;
+  color: #252525;
+}
+/********  Home Our Plant Slider Starts ******* */
+
+/* Video */
+.Video_section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+article.Video_section video {
+  width: 100%;
+}
+.video_overlay {
+  background: #00000054;
+  color: yellow;
+  padding: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  /* top: 30%; */
+}
+/* Video Ends */
+
+/* Footer Starts */
+footer.footer_container {
+  height: 500px;
+  background-color: #3a2513;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer_nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 1300px;
+}
+.footerlinks ul {
+  display: flex;
+  margin: 0;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerlinks {
+  width: 50%;
+}
+.footerlinks a {
+  color: #d6c1a6;
+}
+
+/* Footer Contact */
+.footer_contact {
+  color: #8c7d71;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #553d29;
+  padding: 50px 0;
+  font-family: "Aurel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+}
+.footer_contact i {
+    margin-right: 10px;
+}
+.fcontact.mail,
+.fcontact.address {
+  margin-right: 100px;
+}
+
+.footer_copyright {
+  color: #6a5b4d;
+}
+.footer_contact span {
+    display: flex;
+    align-items: center;
+    padding: 0 0 2px 0;
+    transition: 0.25s ease;
+
+}
+.footer_contact span:hover{
+    color: #fff3d9;
+    cursor: pointer;
+}
+
+/* Footer socials */
+.footer_social_links {
+  color: #8c7d71;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+}
+.footer_social_links span {
+  border: 2px solid #8c7d71;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.footer_social_links .fa-facebook-f {
+  padding: 10px 12px;
+}
+
+.footer_social_links span:hover {
+    color: #fff3d9;
+    border: 2px solid;
+}
+/* Footer copyright */
+.footer_copyright a:hover {
+    color: #fff3d9;
+    text-decoration: none;
+}
+.footer_copyright a {
+    color: #6a5b4d;
+    transition: 0.25s ease;
+}
+/* Footer Ends */
